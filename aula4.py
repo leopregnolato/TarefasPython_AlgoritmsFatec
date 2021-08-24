@@ -1,4 +1,4 @@
-#Primeira discussão: condicionais
+# #Primeira discussão: condicionais
 
 # print("Primeiro programa com o comando if")
 # A = int(input("Digite um valor para A: "))
@@ -16,26 +16,28 @@
 diferente do pdf da aula, para enfatizar que um mesmo problema
 pode ser resolvido com diferentes códigos'''
 
-#Segunda discussão: tipos de condições
+# #Segunda discussão: tipos de condições
 
-#sobre a ordem dos caracteres na tabela ASCII
+# #sobre a ordem dos caracteres na tabela ASCII
 # print(ord("A"))
 # print(ord("I"))
 # print(ord("Í"))
 # print(ord("i"))
 
-print( "A" > "a")
-print( "a" > "A")
+# print( "A" > "a")
+# print( "a" > "A")
 
-X = 3.000000000001
-Y = 3.000
+# #Sobre o trablaho com números reais e suas peculiaridades
 
-print("X = {:.3f}".format(X))
-print("Y = {:.3f}".format(Y))
+# X = 3.000000000001
+# Y = 3.000
 
-print(X == Y)
+# print("X = {:.3f}".format(X))
+# print("Y = {:.3f}".format(Y))
 
-print(abs(X-Y) < 0.0009) #essa é a maneira de considerar se X == Y
+# print(X == Y)
+
+# print(abs(X-Y) < 0.0009) #essa é a maneira de considerar se X == Y
 
 
 
@@ -65,5 +67,12 @@ caracteres;
 
 > Tomar cuidado EXTREMO com condicionais ou comparações entre valores reais uma vez que 
 a precisão desse conjunto numérico é difícil de determinar.
+
+> Em testes lógico é importante notar a ordem de precedência dos operadores NOT, AND
+e OR: NOT em primeiro, AND em seguida e OR por último;
+
+> comando print com format()
+    print("X = {}".format(X))
+    print("X = {:.3f}".format(X)) #controlar o número de casas decimais
 
 '''

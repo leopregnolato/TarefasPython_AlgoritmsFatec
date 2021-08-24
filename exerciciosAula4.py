@@ -19,8 +19,12 @@
 # B = int(input("Digite outro número: "))
 # if A < B:
 #     print("O menor número é", A, "e o maior número é", B)
-# else:
+# elif B < A:
 #     print("O menor número é", B, "e o maior número é", A)
+# else:
+#     print("A e B são iguais: {}".format(A))
+
+# print("Fim do programa")
 
 ### Exercício 4
 
@@ -58,6 +62,10 @@
 #     print("O lutador", nome, "pesa", peso, "kg e se enquadra na categoria Meio Pesado")
 # else:
 #     print("O lutador", nome, "pesa", peso, "kg e se enquadra na categoria Pesado")
+
+# Pode ser refatorado o print do seguinte modo e simplificar os ifs
+# print("O lutador {} pesa {:.1f} e se enquadra na categoria {}".format(nome, peso, categoria))
+# E com isso as decisões podem ser resumidas apenas atribuindo valores à variável categoria.
 
 # ### Exercício 7 ****ENTREGA****
 
