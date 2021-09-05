@@ -12,6 +12,7 @@ numbers = []
 orderednumbers = []
 major = 0
 count = 0
+maxindex = 0
 
 while count < 100:
     numbers.append(int(input()))
@@ -19,6 +20,7 @@ while count < 100:
 
 orderednumbers = sorted(numbers)
 major = orderednumbers[99]
+maxindex = (numbers.index(major) + 1) 
 
 print(major)
-print(numbers.index(major))
+print(maxindex)
