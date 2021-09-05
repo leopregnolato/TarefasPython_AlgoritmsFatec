@@ -7,3 +7,18 @@ O arquivo de entrada contém 100 números inteiros, positivos e distintos.
 Saída
 Apresente o maior valor lido e a posição de entrada, conforme exemplo abaixo.
 '''
+
+numbers = []
+orderednumbers = []
+major = 0
+count = 0
+
+while count < 100:
+    numbers.append(int(input()))
+    count = count + 1
+
+orderednumbers = sorted(numbers)
+major = orderednumbers[99]
+
+print(major)
+print(numbers.index(major))
