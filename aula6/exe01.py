@@ -7,8 +7,9 @@ para esse número fornecido. Siga o formato apresentado abaixo (supondo que foi 
 ...
 4 x 10 = 40
 '''
-arquivo = open('exe01.txt', 'w+')
+arquivo = open('exe01.txt', 'w')
 N = int(input())
+arquivo.write("*** Tabuada do {}: ***\n\n".format(N))
 count = 0
 result = 0
 mult = 0
@@ -16,7 +17,8 @@ mult = 0
 while count < 10:
     mult = count + 1
     result = N * mult
-    print("{} X {} = {}".format(N, mult, result), file=arquivo)
+    print("{} X {} = {}".format(N, mult, result))
+    arquivo.write("{} X {} = {}\n".format(N, mult, result))
     count = count + 1
 
 arquivo.close()
