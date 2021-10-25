@@ -13,29 +13,25 @@ count = 0
 
 while count < N:
     B = randint(0, 1000)
-    A[count] = B
-    count = count + 1
-    
+    A.append(B) 
+    count = count + 1    
 
 print("-----------------------------------------------------------------------------------------")
 print("Lista gerada: {}".format(A))
 print("-----------------------------------------------------------------------------------------")
 
 X = int(input("Digite um valor: "))
-Xposition = []
+print("\nProcurando {} na lista...".format(X))
 i = 0
+achei = False
 
 while i < N:
     if X == A[i]:
-        Xposition[i] = X  
+        achei = True
+        print("     econtrado na posição {}".format(i))
     i = i + 1
 
-if Xposition == []:
-    print("     O valor {} não está na lista!".format(X))
-    print("-----------------------------------------------------------------------------------------")
-else:
-    print("O valor {} está na lista!".format(X))
-    print("Na(s) seguinte(s) posição(ões): {}".format(Xposition))
-    print("-----------------------------------------------------------------------------------------")
+if not achei:
+    print("     não encontrado")
 
 print("\n\nFim do programa")

@@ -8,7 +8,7 @@ N = 1
 
 while N != 0:
     N = float(input("Digite um número: "))
-    if (N % 2) == 0 or (N % 3) == 0:
+    if (N % 2) == 0 and (N % 3) == 0:
         print(N)
     else:
         N = 1
