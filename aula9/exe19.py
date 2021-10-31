@@ -22,7 +22,8 @@ while N > 0:
                 tamL += 1            
             elif N == L[0]:                
                 print("{} já está na lista! Digite outro valor!".format(N))
-            elif N > L[]       
+            elif N > L[i]:
+                
     N = int(input("Digite outro valor: "))
 
 
