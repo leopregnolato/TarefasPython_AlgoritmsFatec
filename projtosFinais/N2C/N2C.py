@@ -3,7 +3,6 @@ print("Gustavo Notarnicola Gonçalves, RA: 21206464")
 print("Leonardo Antonio Pregnolato, RA: 21206393")
 print("N2C\n\n")
 
-
 def CalcAliqINSS(SalBruto):    
     if S <= 1751.81:        
         AliqINSS = 0.08        
@@ -20,7 +19,6 @@ def CalcValINSS(SalBruto, AliqINSS):
     ValINSS =  SalBruto * AliqINSS
     return ValINSS    
 
-
 def CalcAliqIR(SalBruto, ValINSS):
     base = SalBruto - ValINSS
     if base <= 1903.98:        
@@ -36,7 +34,7 @@ def CalcAliqIR(SalBruto, ValINSS):
         AliqIR = 0.225
         deducao = 636.13
     elif S >= 4664.69:
-        AliqIR = 1
+        AliqIR = 0.275
         deducao = 869.36
     return base, AliqIR, deducao
 
@@ -82,7 +80,6 @@ D = "BaseIR"
 E = "AliqIR"
 F = "ValIR"
 G = "SalLiquido"
-
 
 arquivo.write(f"{A: >10}{B: >15}{C: >15}{D: >15}{E: >15}{F: >15}{G: >15}\n")
 
