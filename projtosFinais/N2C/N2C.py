@@ -84,7 +84,7 @@ F = "ValIR"
 G = "SalLiquido"
 
 
-arquivo.write(f"{A: <15}{B: <15}{C: <15}{D: <15}{E: <15}{F: <15}{G: <15}\n")
+arquivo.write(f"{A: >10}{B: >15}{C: >15}{D: >15}{E: >15}{F: >15}{G: >15}\n")
 
 i = 0
 while i < len(Salario):
@@ -97,7 +97,7 @@ while i < len(Salario):
     PSalLiquido = CalcSalLiquido(PBruto, PValINSS, PValIR)
     PAliqINSS = PAliqINSS * 100
     PAliqIr = PAliqIr * 100    
-    arquivo.write(f"{PBruto: <15.2f}{PAliqINSS: <15}{PValINSS: <15.2f}{PBaseIR: <15.2f}{PAliqIr: <15}{PValIR: <15.2f}{PSalLiquido: <15.2f}\n")
+    arquivo.write(f"{PBruto: >10.2f}{PAliqINSS: >15.1f}{PValINSS: >15.2f}{PBaseIR: >15.2f}{PAliqIr: >15.1f}{PValIR: >15.2f}{PSalLiquido: >15.2f}\n")
     i = i + 1
     
 arquivo.close()
