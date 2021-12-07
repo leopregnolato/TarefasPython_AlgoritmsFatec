@@ -1,0 +1,3 @@
+Necessidade de Transferência Armazém para CO
+
+        Produto           QtCO          QtMin       QtVendas                  Estq. após Vendas       Necess. Transf. de Arm p/ CO
