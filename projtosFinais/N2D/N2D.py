@@ -52,31 +52,38 @@ vendasCodigo = []
 x = 0
 qtVendas = []
 somaVendas = 0
-listX = []
+
+
+'''if estaNaLista(x, A, TamA):
+    print("     ...o valor {} já está na lista! Digite outro por favor.\n".format(x))
+else:'''
+         
+    
+
+
+
 
 while i < len(Vendas):
-    x = Vendas[i][0]    
-    if estaNaLista(x, listX, len(listX)):
-        i += 1 
-    else:
-        j = len(Vendas) - i 
-        while j > 0:       
-            z = Vendas[j-1][1]
-            w = int(Vendas[j-1][2])
-            if Vendas[j-1][0] == x:
-                if w == 100 or w == 102:            
-                    A = int(z)
-                    somaVendas = somaVendas + A
-            j -= 1                            
-        i += 1 
-        qtVendas.append(x)
-        qtVendas.append(somaVendas)      
-        somaVendas = 0 
-    listX.append(x) 
+    x = Vendas[i][0]
+    j = len(Vendas) - i 
+    while j > 0:       
+        z = Vendas[j-1][1]
+        w = int(Vendas[j-1][2])
+        if Vendas[j-1][0] == x:
+            if w == 100 or w == 102:            
+                A = int(z)
+                somaVendas = somaVendas + A
+        j -= 1                            
+    i += 1 
+    qtVendas.append(x)
+    qtVendas.append(somaVendas)
     
-print(qtVendas)  
+    somaVendas = 0
+    
+    
+    
 
-
+print(qtVendas)
 
 
 
